@@ -61,12 +61,6 @@ bcrypt is a library that allows you to hash passwords and compare them during lo
 If you need help with your project, let me know!
 
 
-## Demo
-
-Insert gif or link to demo
-
-
-
 
 
 -- --------------------------------------------------------
