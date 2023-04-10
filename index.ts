@@ -79,6 +79,8 @@ app.post('/register', async (req, res) => {
     const newUser = new User({
         email, name, password: hashedPassword, id
     });
+
+
     const result = await newUser.insert();
     if (result == "ok") {
         res.json({usserRegisterd: true})

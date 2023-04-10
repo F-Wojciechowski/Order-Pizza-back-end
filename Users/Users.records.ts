@@ -75,7 +75,7 @@ export class User implements userRecord{
         return summary
     }
     async insert(): Promise<string>{
-        const result = await pool.execute("INSERT INTO `users`(`id`,`name`, `password`,`stan_konta`, `email`) VALUES(:id,:name, :password,:stan_konta, :email)",this) as CustomRowDataPacket
+        const result = await pool.execute("INSERT INTO `users`(`id`,`name`, `password`, `email`) VALUES(:id,:name, :password, :email)",this) as CustomRowDataPacket
         if(result[0].affectedRows ==1){
             return "ok"
         }
